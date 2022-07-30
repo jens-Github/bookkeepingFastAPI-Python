@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  bookingapi:
+    image: bookkeeping_img
+    environment: 
+      - MONGODB_CONNSTRING=mongodb
+    ports:
+      - 81:81
+  mongodb:
+    image: mongo:5.0
